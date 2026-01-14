@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forelesning2", "Forelesning2\Forelesning2.csproj", "{5A5CDFD8-AACB-43F4-BF4B-1B4A775CB436}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A5CDFD8-AACB-43F4-BF4B-1B4A775CB436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5CDFD8-AACB-43F4-BF4B-1B4A775CB436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5CDFD8-AACB-43F4-BF4B-1B4A775CB436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5CDFD8-AACB-43F4-BF4B-1B4A775CB436}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F61CB1A-2BD3-4F59-B37B-728DD4FD07E2}
+	EndGlobalSection
+EndGlobal
