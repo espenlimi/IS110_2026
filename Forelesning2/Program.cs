@@ -1,4 +1,4 @@
-// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
 using Forelesning2;
@@ -15,11 +15,20 @@ Person p = new Person();
 //p.VisInformasjon();
 
 // Skriv ut verdier som vi fikk fra brukeren
-p.SetId(idVerdi); 
-p.SetNavn(navnVerdi);
+//p.SetId(idVerdi); 
+//p.SetNavn(navnVerdi);
+
+p.Id = idVerdi;
+p.Navn = navnVerdi;
 p.VisInformasjon();
 
 // Bruk av Get metoden for spesifikke felt
-string pNavn = p.GetNavn();
-Console.WriteLine(pNavn);
-Console.WriteLine(p.GetNavn());
+//string pNavn = p.GetNavn();
+//Console.WriteLine(pNavn);
+//Console.WriteLine(p.GetNavn());
+
+Bruker nyBruker = new Bruker("espenlimi");
+nyBruker.Passord = "123abc";
+Console.WriteLine(nyBruker.BrukerNavn);
+//Får feil fordi passordet er beskyttet med privat get
+// Console.WriteLine(nyBruker.Passord);
