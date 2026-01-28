@@ -17,6 +17,7 @@ namespace Forelesning2
 
         public int Id { get; set; }
         public string Navn { get; set; } = string.Empty;
+         public int Alder { get; set; }
 
         // Konstruktøren
         public Person()
