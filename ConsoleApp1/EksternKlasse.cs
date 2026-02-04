@@ -4,7 +4,7 @@ namespace ConsoleApp1
     {
         public void TestTilgangEkstern()
         {
-            Console.WriteLine($"klassen kan få tilgang til {protectedInternalFelt}");
+            Console.WriteLine($"klassen kan få tilgang til {protectedInternalFelt} og {protctedFelt}");
         }
     }
 }
