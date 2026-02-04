@@ -11,3 +11,9 @@ Person p1 = new Person();
 var p2 = new Person();
 
 //TestInternal t = new Forelesning2.TestInternal();
+
+
+//////////////Arv og protected internal tilgang///////////////////////
+EksternKlasse e = new EksternKlasse();
+e.TestTilgangEkstern();
+//TestInternal t = new Forelesning2.TestInternal();
