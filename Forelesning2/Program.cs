@@ -42,7 +42,7 @@ using System;
 
 
 ///////////////////// List /////////////////////////////////////////////
-List<Person> persons = new List<Person>();
+/* List<Person> persons = new List<Person>();
 
 var espen = new Person();
 espen.Id = 1;
@@ -70,10 +70,11 @@ persons.Add(new Person
     Alder = 100,
     Navn = "Magne",
     Id = 4
-});
+}); 
+*/
 
 ///////////////// Løkke for å gå gjennom listen /////////////////////////////////
-foreach (Person person in persons)
+/* foreach (Person person in persons)
 {
     Console.WriteLine($"Navn: {person.Navn}, Alder: {person.Alder}");
 }
@@ -93,10 +94,10 @@ foreach (Person person in persons)
 {
     Console.WriteLine($"Navn: {person.Navn}, Alder: {person.Alder}");
 }
-
+*/
 
 /////////////////// LINQ + List ////////////////////////////////////////////////////
-var personQuery = from person in persons
+/* var personQuery = from person in persons
                   where person.Alder > 30 && person.Navn.ToUpper().Contains('M')
                   orderby person.Alder descending
                   select person;
@@ -117,12 +118,12 @@ foreach (Person person in personQuery2)
 {
     Console.WriteLine($"Navn: {person.Navn}, Alder: {person.Alder}");
 }
-
+*/
 
 ///////////////////////////// Eksempel på LINQ + Array ////////////////////////////////////////
 // Eksempel 1:
 // Datakilde
-int[] scores = { 97, 92, 81, 60 };
+/* int[] scores = { 97, 92, 81, 60 };
 
 // LINQ spørring 
 var scoreQuery =
@@ -154,13 +155,13 @@ foreach (int num in numQuery)
 {
     Console.WriteLine(num);
 }
-
+*/
 ///////////////////////////// LINQ + List ////////////////////////////////////////
 
 // Eksempel 3:
 
 // Datakilde
-List<string> fruits = new List<string> { "apple", "banana", "cherry" };
+/* List<string> fruits = new List<string> { "apple", "banana", "cherry" };
 
 // LINQ spørringen
 var wordLengths = from w in fruits
@@ -187,3 +188,20 @@ foreach (string f in fruitContains)
 {
     Console.WriteLine(f);
 }
+*/
+
+//////////////////Arv og tilgang/////////////////////////////////////
+Student s = new Student("Ole", 20, "A", "IS-110");
+Person p = new Student("Ida", 19, "A", "IS-110");
+Person p2 = new Person("Fredrik", 20);
+p.Introduce();
+Console.WriteLine();
+s.Introduce();
+Console.WriteLine();
+p2.Introduce();
+
+ChildTestTilgangKlasse t = new ChildTestTilgangKlasse();
+t.TestTilgang();
+VanligKlasse v = new VanligKlasse();
+TestTilgangKlasse k = new TestTilgangKlasse();
+v.TestTilgangVanlig(k);
