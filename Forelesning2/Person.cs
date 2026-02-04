@@ -11,7 +11,8 @@ namespace Forelesning2
     {
         // Deklarer instansvariabler
         //private int id;
-        //private string navn;
+        private protected string navn;
+        private protected int alder;
         //private DateOnly fødselsdato;
         //private string adresse;
 
@@ -27,6 +28,24 @@ namespace Forelesning2
             Navn = string.Empty;
 
         }
+
+        // Konstruktør med parametere
+        public Person(string n, int a)
+        {
+            navn = n;
+            alder = a;
+        }
+
+         // virtual muliggjør at vi kan endre logikken i Student klassen
+         public virtual void Introduce()
+         {
+             Console.WriteLine($"Navnet til personen er: {navn}, og alderen er: {alder}");
+         }
+
+         // en metode som vi skal kalle fra student
+         protected void SkrivUtTekst() {
+             Console.WriteLine("direkte metodekall!");
+         }
 
         // deklarer Set og Get metoder
         //public void SetId(int personId)
