@@ -6,16 +6,19 @@ namespace Repetisjon1
 {
     internal class ParkeringsPlass
     {
-        private Bil[] plasser = new Bil[3];
+        private Kjøretøy[] plasser = new Kjøretøy[8];
 
-        public bool ParkerBil(Bil bil)
-        { 
+        public bool ParkerKjøretøy(Kjøretøy kjøretøy)
+        {
+            if (ErKjøretøyParkert(kjøretøy))
+                return true;
+
             var index = 0;
             while (index < plasser.Length)
             { 
                 if(plasser[index] == null)
                 {
-                    plasser[index] = bil;
+                    plasser[index] = kjøretøy;
                     return true;
                 }
                 index++;
@@ -23,19 +26,20 @@ namespace Repetisjon1
             return false;
         }
 
-        public bool ForlatParkeringsPlass(Bil bil)
+        public bool ForlatParkeringsPlass(Kjøretøy kjøretøy)
         {
-            var query = from parkertBil in plasser
-                        where parkertBil == bil
-                        select parkertBil;
-
-            if(query.Any())
+            if(ErKjøretøyParkert(kjøretøy))
             {
-                var index = Array.IndexOf(plasser, bil);
+                var index = Array.IndexOf(plasser, kjøretøy);
                 plasser[index] = null;
                 return true;
             }
             return false;
+        }
+
+        private bool ErKjøretøyParkert(Kjøretøy kjøretøy)
+        {
+            return plasser.Contains(kjøretøy);
         }
 
         public void VisParkeringsPlasser()
@@ -44,7 +48,8 @@ namespace Repetisjon1
             {
                 if (plasser[i] != null)
                 {
-                    Console.WriteLine($"Plass {i + 1}: {plasser[i]}");
+                    Console.WriteLine($"Plass {i + 1}: {plasser[i]} - {plasser[i].LydSignal()}");
+                    
                 }
                 else
                 {

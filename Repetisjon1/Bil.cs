@@ -1,38 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Repetisjon1
+﻿namespace Repetisjon1
 {
-    internal class Bil
+    internal class Bil : Kjøretøy
     {
-        public string Merke { get; set; }
-        public string Modell { get; set; }
-        public int Årsmodell { get; set; }
-        public string Farge { get; set; }
-
-        public int AntallHjul { get; set; } = 4;
-
-        public Bil(string merke, string modell, int årsmodell, string farge)
+        public Bil(string merke, string modell, int årsmodell, string farge) : base(merke, modell, årsmodell, farge)
         {
-            Merke = merke;
-            Modell = modell;
-            Årsmodell = årsmodell;
-            Farge = farge;
-        }
-        public Bil(string merke, string modell, int årsmodell, string farge, int antallHjul)
-        {
-            Merke = merke;
-            Modell = modell;
-            Årsmodell = årsmodell;
-            Farge = farge;
-            AntallHjul = antallHjul;
         }
 
+        public Bil(string merke, string modell, int årsmodell, string farge, int antallHjul) : base(merke, modell, årsmodell, farge, antallHjul)
+        {
+        }
         public override string ToString()
         {
-            return $"{Merke} {Modell} ({Årsmodell}), Farge: {Farge}";
+            return $"Eg er ein bil! {Merke} {Modell} ({Årsmodell}), Farge: {Farge}";
         }
-       
     }
 }
