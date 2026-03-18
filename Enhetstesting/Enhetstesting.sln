@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enhetstesting", "Enhetstesting\Enhetstesting.csproj", "{FD002F59-F5F6-482E-A211-71D5D025C85B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcTests.Tests", "CalcTests\CalcTests.Tests.csproj", "{FAFFA042-92D4-4731-9FE1-7DCD7B4130D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD002F59-F5F6-482E-A211-71D5D025C85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD002F59-F5F6-482E-A211-71D5D025C85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD002F59-F5F6-482E-A211-71D5D025C85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD002F59-F5F6-482E-A211-71D5D025C85B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAFFA042-92D4-4731-9FE1-7DCD7B4130D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAFFA042-92D4-4731-9FE1-7DCD7B4130D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAFFA042-92D4-4731-9FE1-7DCD7B4130D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFFA042-92D4-4731-9FE1-7DCD7B4130D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F1B64FE-5799-4183-B4B2-645FDE019756}
+	EndGlobalSection
+EndGlobal
