@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repetisjon1", "Repetisjon1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "Feilhåndtering\ExceptionHandling\ExceptionHandling.csproj", "{1DBA9727-9D68-99AD-00B4-7D625A5A161C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repetisjon2", "Repetisjon2\Repetisjon2.csproj", "{3036BA0C-8E25-443B-BC8D-9B93CFBE700A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1DBA9727-9D68-99AD-00B4-7D625A5A161C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DBA9727-9D68-99AD-00B4-7D625A5A161C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DBA9727-9D68-99AD-00B4-7D625A5A161C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3036BA0C-8E25-443B-BC8D-9B93CFBE700A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3036BA0C-8E25-443B-BC8D-9B93CFBE700A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3036BA0C-8E25-443B-BC8D-9B93CFBE700A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3036BA0C-8E25-443B-BC8D-9B93CFBE700A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
