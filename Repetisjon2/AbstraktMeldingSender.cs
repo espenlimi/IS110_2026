@@ -12,6 +12,9 @@ namespace Repetisjon2
             Console.WriteLine($"Avsender: {melding.Avsender} ");
             Console.WriteLine($"Mottaker: {melding.Mottaker}");
             Console.WriteLine($"Innhold: {melding.Innhold}");
+            SkrivUtVerdi();
         }
+
+        protected abstract void SkrivUtVerdi();
     }
 }

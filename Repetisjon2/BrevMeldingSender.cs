@@ -11,6 +11,11 @@ namespace Repetisjon2
             Console.WriteLine($"Sender Brev ");
             SkrivUtMelding(melding);
         }
+
+        protected override void SkrivUtVerdi()
+        {
+            Console.WriteLine(42);
+        }
     }
 }
  

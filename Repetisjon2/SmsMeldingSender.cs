@@ -11,5 +11,10 @@ namespace Repetisjon2
             Console.WriteLine($"Sender SMS ");
             SkrivUtMelding(melding);
         }
+
+        protected override void SkrivUtVerdi()
+        {
+            Console.WriteLine("Det tar en time å gå ned til Ørsta rådhus!");
+        }
     }
 }
