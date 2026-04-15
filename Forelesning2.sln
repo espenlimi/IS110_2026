@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "Feilh√
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repetisjon2", "Repetisjon2\Repetisjon2.csproj", "{3036BA0C-8E25-443B-BC8D-9B93CFBE700A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{3BBB6B0A-BBDE-4BC7-8091-8E270B02393E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection.UnitTests", "DependencyInjection.UnitTests\DependencyInjection.UnitTests.csproj", "{93F4B311-F770-4705-92D1-F56DCBF31F06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{3036BA0C-8E25-443B-BC8D-9B93CFBE700A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3036BA0C-8E25-443B-BC8D-9B93CFBE700A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3036BA0C-8E25-443B-BC8D-9B93CFBE700A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BBB6B0A-BBDE-4BC7-8091-8E270B02393E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BBB6B0A-BBDE-4BC7-8091-8E270B02393E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BBB6B0A-BBDE-4BC7-8091-8E270B02393E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BBB6B0A-BBDE-4BC7-8091-8E270B02393E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F4B311-F770-4705-92D1-F56DCBF31F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F4B311-F770-4705-92D1-F56DCBF31F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F4B311-F770-4705-92D1-F56DCBF31F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F4B311-F770-4705-92D1-F56DCBF31F06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
